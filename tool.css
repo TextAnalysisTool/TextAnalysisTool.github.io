@@ -1,0 +1,33 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10pt;
+}
+
+h1 {
+    font-size: 130%;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 100%;
+    margin-top: 2em;
+}
+
+pre {
+    background-color: rgba(0, 0, 0, 0.1);
+    float: left;
+    margin-bottom: 0;
+}
+
+.center {
+  text-align:center;
+}
+
+.clear {
+    overflow: hidden;
+}
+
+.label {
+    text-decoration: underline;
+}
