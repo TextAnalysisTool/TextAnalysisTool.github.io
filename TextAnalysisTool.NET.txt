@@ -251,10 +251,9 @@ HKEY_CURRENT_USER\Software\DavidAns\TextAnalysisTool.NET
 -- Section: Bug Reports --
 --------------------------
 
-Please send email to DavidAns@Microsoft.com (David Anson), with a detailed
-description of any problems you encounter.  Whenever possible, please include a
-file demonstrating the problem.
+Please create an issue at https://github.com/TextAnalysisTool/Releases/issues
+with a detailed description of any problem you encounter.  Whenever possible,
+please include a file demonstrating the problem.
 
 
 Thanks and enjoy!!!
-
