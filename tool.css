@@ -20,6 +20,13 @@ h3 {
     margin-bottom: 0;
 }
 
+img {
+    width: 400px;
+    height: 300px;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
 .center {
   text-align:center;
 }
