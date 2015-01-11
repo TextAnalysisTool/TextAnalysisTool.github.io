@@ -7,11 +7,14 @@
 -- Requirements --
 ------------------
 
-Microsoft .NET Framework 2.0 or 4.0 (including versions 3.0, 3.5, and 4.5)
+Microsoft .NET Framework 4.0 (or later versions)
 
-Note: TextAnalysisTool.NET is compiled for .NET 2.0 and comes with a .config
-file that lets it run under .NET 4.0 (for example, on Windows 8 without the
-".NET Framework 3.5" feature installed).
+Note: TextAnalysisTool.NET is compiled for .NET 4.0. Later .NET Framework
+versions are supported through a .config that needs to be configured for
+the corresponding version. For more information, please refer to the
+following MSDN article: "How to: Configure an App to Support .NET Framework 4
+or 4.5"
+http://msdn.microsoft.com/en-us/library/jj152935.aspx
 
 
 -------------------------------
@@ -68,6 +71,78 @@ all circumstances, but is ultimately bound by the resources available to it.
 -------------
 -- History --
 -------------
+
+2015-01-07 by Uriel Cohen (http://github.com/cohen-uriel)
+----------
+* Added a tooltip to the loaded file indicator in the status bar
+* Fixed a bug where setting a marker used in an active filter causes the
+  current selection of lines to be changed
+
+2015-01-07 by David Anson (http://dlaa.me/)
+----------
+* Improve HTML representation of clipboard text when copying for more
+  consistent paste behavior
+
+2015-01-01 by Uriel Cohen (http://github.com/cohen-uriel)
+----------
+* Fixed a bug where TAB characters are omitted in the display
+* Fixed a bug where lines saved to file include an extra white space at the
+  start
+
+2014-12-21 by Uriel Cohen (http://github.com/cohen-uriel)
+----------
+* Changed compilation to target .NET Framework 4.0
+
+2014-12-11 by Uriel Cohen (http://github.com/cohen-uriel)
+----------
+* Redesigned the status bar indications to be consistent with Visual Studio and
+  added the number of currently selected lines
+
+2014-12-04 by Uriel Cohen (http://github.com/cohen-uriel)
+----------
+* Added the ability to append an existing filters file to the current filters
+  list
+
+2014-12-01 by Uriel Cohen (http://github.com/cohen-uriel)
+----------
+* Added recent file/filter menus for easy access to commonly-used files
+* Added a new settings registry key to set the
+  maximum number of recent files or filter files allowed in the
+  corresponding file menus
+* Fixed bug where pressing SPACE with no matching lines from filters
+  crashed the application
+* Fixed a bug where copy-pasting lines from the application to Lync
+  resulted in one long line without carriage returns
+
+2014-11-11 by Uriel Cohen (http://github.com/cohen-uriel)
+----------
+* Added support for selection of background color in the filters
+  (different selection of colors than the foreground colors)
+* The background color can be saved and loaded with the filters
+* Filters from previous versions that lack a background color will have the
+  default background color
+* Saving foreground color field in filters to 'foreColor' attribute.
+  Old 'color' attribute is still being loaded for backward compatibility
+  purposes.
+* Changed control alignment in Find dialog and Filter dialog
+
+2014-10-21 by Mike Morante (http://github.com/mike-mo)
+----------
+* Fix localization issue with the build string generation
+
+2014-04-22 by Mike Morante (http://github.com/mike-mo)
+----------
+* Line metadata is now visually separate from line text contents
+* Markers can be shown always/never/when in use to have more room for line text
+  and the chosen setting persists across sessions
+* Added statusbar panel funnel icon to reflect the current status of the Show
+  Only Filtered Lines setting
+
+2014-02-27 by Mike Morante (http://github.com/mike-mo)
+----------
+* Added zoom controls to quickly increase/decrease the font size
+* Zoom level persists across sessions
+* Added status bar panel to show current zoom level
 
 2013-05-07
 ----------
