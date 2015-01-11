@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: "Segoe UI", GillSans, Helvetica, sans-serif;
     font-size: 10pt;
 }
 
@@ -14,20 +14,31 @@ h2 {
     margin-top: 2em;
 }
 
-pre {
-    background-color: rgba(0, 0, 0, 0.1);
-    float: left;
+h3 {
+    font-size: 100%;
+    font-weight: normal;
     margin-bottom: 0;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    margin-top: 1em;
+    margin-right: 1em;
 }
 
 .center {
   text-align:center;
 }
 
-.clear {
-    overflow: hidden;
-}
-
 .label {
     text-decoration: underline;
+}
+
+.notes {
+    margin-top: 0;
+}
+
+.large {
+    font-size: 120%;
 }

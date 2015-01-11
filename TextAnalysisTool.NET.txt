@@ -7,23 +7,23 @@
 -- Section: Brief Tutorial --
 -----------------------------
 
-If you're not already viewing this document with TextAnalysisTool.NET, please
-do so by running the application and choosing the Help | Documentation menu
-item.  Having done so, you should be seeing this documentation file displayed
-in the top part of the application's window along with a few handy filters in
-the bottom part of the window.  To quickly see what section headings this
-document has, click the "Section:" filter to enable it - and while you're at it
-go ahead and enable the next filter down, too: "Marked by marker 1".  Notice
-how all lines that don't match the filters you just enabled have been dimmed.
-Click anywhere in the line display to give it focus and then hit the Space bar
-a few times to cycle forward through all the matching lines (use Shift+Space to
-cycle backward).  To take things a step further, hit Ctrl+H or choose the View
-| Show Only Filtered Lines menu option.  Because you're now seeing only the
-lines you're interested in, it's easy to avoid getting bogged down by spurious
-details.  Use the arrow keys to highlight the section on command-line
-parameters (it's near the bottom) and hit Ctrl+H again to view the selected
-line in the context of its surroundings.  Explore the power of this interface
-by enabling and disabling some of the other sample filters, then read the rest
+If you're not already viewing this document with TextAnalysisTool.NET, please 
+do so by running the application and choosing the Help | Documentation menu 
+item.  Having done so, you should be seeing this documentation file displayed 
+in the top part of the application's window along with a few handy filters in 
+the bottom part of the window.  To quickly see what section headings this 
+document has, click the "Section:" filter to enable it - and while you're at it 
+go ahead and enable the next filter down, too: "Marked by marker 1".  Notice 
+how all lines that don't match the filters you just enabled have been dimmed.  
+Click anywhere in the line display to give it focus and then hit the Space bar 
+a few times to cycle forward through all the matching lines (use Shift+Space to 
+cycle backward).  To take things a step further, hit Ctrl+H or choose the View 
+| Show Only Filtered Lines menu option.  Because you're now seeing only the 
+lines you're interested in, it's easy to avoid getting bogged down by spurious 
+details.  Use the arrow keys to highlight the section on command-line 
+parameters (it's near the bottom) and hit Ctrl+H again to view the selected 
+line in the context of its surroundings.  Explore the power of this interface 
+by enabling and disabling some of the other sample filters, then read the rest 
 of this document to find out how to take advantage of more neat features!
 
 
@@ -31,51 +31,51 @@ of this document to find out how to take advantage of more neat features!
 -- Section: Overview --
 -----------------------
 
-The Problem: For those times when you have to analyze a large amount of textual
-data, picking out the relevant line(s) of interest can be quite difficult.
-Standard text editors usually provide a generic "find" function, but the
-limitations of that simple approach quickly become apparent (e.g., when it is
-necessary to compare two or more widely separated lines).  Some more
-sophisticated editors do better by allowing you to "bookmark" lines of
+The Problem: For those times when you have to analyze a large amount of textual 
+data, picking out the relevant line(s) of interest can be quite difficult.  
+Standard text editors usually provide a generic "find" function, but the 
+limitations of that simple approach quickly become apparent (e.g., when it is 
+necessary to compare two or more widely separated lines).  Some more 
+sophisticated editors do better by allowing you to "bookmark" lines of 
 interest; this can be a big help, but is often not enough.
 
-The Solution: TextAnalysisTool.NET - a program designed from the start to excel
-at viewing, searching, and navigating large files quickly and efficiently.
-TextAnalysisTool.NET provides a view of the file that you can easily manipulate
-(through the use of various filters) to display exactly the information you
+The Solution: TextAnalysisTool.NET - a program designed from the start to excel 
+at viewing, searching, and navigating large files quickly and efficiently.  
+TextAnalysisTool.NET provides a view of the file that you can easily manipulate 
+(through the use of various filters) to display exactly the information you 
 need - as you need it.
 
-Filters: Before displaying the lines of a file, TextAnalysisTool.NET passes the
-lines of that file through a set of user-defined filters, dimming or hiding all
-lines that do not satisfy any of the filters.  Filters can select only the
-lines that contain a sub-string, those that have been marked with a particular
-marker type, or those that match a regular expression.  A color can be
-associated with each filter so lines matching a particular filter stand out and
-so lines matching different filters can be easily distinguished.  In addition
-to the normal "including" filters that isolate lines of text you DO want to
-see, there are also "excluding" filters that can be used to suppress lines you
-do NOT want to see.  Excluding filters are configured just like including
-filters but are processed afterward and remove all matching lines from the set.
+Filters: Before displaying the lines of a file, TextAnalysisTool.NET passes the 
+lines of that file through a set of user-defined filters, dimming or hiding all 
+lines that do not satisfy any of the filters.  Filters can select only the 
+lines that contain a sub-string, those that have been marked with a particular 
+marker type, or those that match a regular expression.  Text and background 
+colors can be associated with each filter so that lines matching a particular 
+filter stand out and lines matching different filters can be easily distinguished. 
+In addition to the normal "including" filters that isolate lines of text you DO 
+want to see, there are also "excluding" filters that can be used to suppress 
+lines you do NOT want to see.  Excluding filters are configured just like including 
+filters but are processed afterward and remove all matching lines from the set.  
 Excluding filters allow you to easily refine your search even further.
 
-Markers: Markers are another way that TextAnalysisTool.NET makes it easy to
-navigate a file; you can mark any line with one or more of eight different
-marker types.  Once lines have been marked, you can quickly navigate between
+Markers: Markers are another way that TextAnalysisTool.NET makes it easy to 
+navigate a file; you can mark any line with one or more of eight different 
+marker types.  Once lines have been marked, you can quickly navigate between 
 similarly marked lines - or add a "marked by" filter to view only those lines.
 
-Find: TextAnalysisTool.NET also provides a flexible "find" function that allows
-you to search for text anywhere within a file.  This text can be a literal
-string or a regular expression, so it's easy to find a specific line.  If you
-decide to turn a find string into a filter, the history feature of both dialogs
+Find: TextAnalysisTool.NET also provides a flexible "find" function that allows 
+you to search for text anywhere within a file.  This text can be a literal 
+string or a regular expression, so it's easy to find a specific line.  If you 
+decide to turn a find string into a filter, the history feature of both dialogs 
 makes it easy.
 
-Summary: TextAnalysisTool.NET was written with speed and ease of use in mind
-throughout.  It saves you time by allowing you to save and load filter sets; it
-lets you import text by opening a file, dragging-and-dropping a file or text
-from another application, or by pasting text from the clipboard; and it allows
-you to share the results of your filters by copying lines to the clipboard or
-by saving the current lines to a file.  TextAnalysisTool.NET supports files
-encoded with ANSI, UTF-8, Unicode, and big-endian Unicode and is designed to
+Summary: TextAnalysisTool.NET was written with speed and ease of use in mind 
+throughout.  It saves you time by allowing you to save and load filter sets; it 
+lets you import text by opening a file, dragging-and-dropping a file or text 
+from another application, or by pasting text from the clipboard; and it allows 
+you to share the results of your filters by copying lines to the clipboard or 
+by saving the current lines to a file.  TextAnalysisTool.NET supports files 
+encoded with ANSI, UTF-8, Unicode, and big-endian Unicode and is designed to 
 handle large files efficiently.
 
 
@@ -86,62 +86,86 @@ handle large files efficiently.
 Display
 -------
 
-Line Display: The line display shows all of the lines with which you are
-currently working.  Each line is shown with its original line number, an
-indication of which markers have been applied to it, and colored according to
-whether or not it matches any of the current filters (if a line matches more
-than one filter it will be colored by the topmost colored filter in the filter
-display).  Any selected lines are highlighted; actions like toggling markers or
-copying to the clipboard affect all selected lines.  Non-contiguous selections
+Line Display: The line display shows all of the lines with which you are 
+currently working.  Each line is shown with its original line number, an 
+indication of which markers have been applied to it, and colored according to 
+whether or not it matches any of the current filters (if a line matches more 
+than one filter it will be colored by the topmost colored filter in the filter 
+display).  Any selected lines are highlighted; actions like toggling markers or 
+copying to the clipboard affect all selected lines.  Non-contiguous selections 
 can be made in the usual manner with the Shift and Ctrl keys.
 
-Filter Display: The filter display shows the filters with which you are
-currently working.  Filters can be enabled or disabled by clicking on them.
-Further functionality (such as moving, editing, or removing a filter) is
+Filter Display: The filter display shows the filters with which you are 
+currently working.  Filters can be enabled or disabled by clicking on them.  
+Further functionality (such as moving, editing, or removing a filter) is 
 available from the Filter menu or from the context menu obtained by right-
-clicking on any filter.  Lines matching any of the first twenty-six filters can
+clicking on any filter.  Lines matching any of the first twenty-six filters can 
 be easily cycled through with the keyboard.
+
+Status Bar: The status bar at the bottom of the window contains information
+about the currently loaded file and some indicators about the current state of
+TextAnalysisTool.NET.
 
 
 Menus
 -----
 
 File
- Open...                   Opens and displays a file
- Reload                    Reloads the current file from disk
- Save Current Lines...     Saves the current lines to a new file
- Load Filters...           Loads a filter file (*.tat) and replaces the current
-                           filters
- Save Filters...           Saves the current filters to a filter file (*.tat)
- Exit                      Exits the application
+ Open...                          Opens and displays a file
+ Reload                           Reloads the current file from disk
+ Save Current Lines...            Saves the current lines to a new file
+ Load Filters...                  Loads a filter file (*.tat) and replaces the
+                                  current filters
+ Save Filters...                  Saves the current filters to a filter file
+                                  (*.tat)
+ Append to Existing Filters...    Loads a filter file (*.tat) and appends the
+                                  filters to the current filters
+ Recent Files                     A list of the most recently loaded files
+  Clear Recent Files List         Clears the list of most recently loaded files
+ Recent Filter Files              A list of the most recently loaded filter
+                                  files
+  Clear Recent Filter Files List  Clears the list of most recently loaded
+                                  filter files
+ Exit                             Exits the application
 
 Edit
- Copy                      Copies the currently selected line(s) to the
-                           clipboard
- Paste                     Displays all text currently on the clipboard
- Select All                Selects all lines
- Find...                   Finds the next match of a string or regular
-                           expression
- Find Previous             Repeats the last find operation (searching up)
- Find Next                 Repeats the last find operation (searching down)
- Go To...                  Scrolls to the specified line number
+ Copy                             Copies the currently selected line(s) to the
+                                  clipboard
+ Paste                            Displays all text currently on the clipboard
+ Select All                       Selects all lines
+ Find...                          Finds the next match of a string or regular
+                                  expression
+ Find Previous                    Repeats the last find operation (searching
+                                  up)
+ Find Next                        Repeats the last find operation (searching
+                                  down)
+ Go To...                         Scrolls to the specified line number
 
 View
- Show Only Filtered Lines  Toggles showing/hiding of lines that do not satisfy
-                           the currently active filters (note: the current line
-                           is preserved whenever possible; otherwise it is kept
-                           as near to its previous location as possible)
+ Show Only Filtered Lines         Toggles showing/hiding of lines that do not
+                                  satisfy the currently active filters (note:
+                                  the current line is preserved whenever
+                                  possible; otherwise it is kept as near to its
+                                  previous location as possible)
+ Show Markers
+  Always                          Always show the markers left of the text
+  Never                           Never show the markers left of the text
+  Only When In Use                Show the markers only when markers are defined
+ Zoom In                          Increases the font size
+ Zoom Out                         Decreases the font size
+ Reset Zoom                       Resets the font size to the default size
+
 Filter
- Add New Filter...         Adds a new filter of any type
- Edit Selected Filter...   Edits the selected filter
- Remove Selected Filter    Removes the selected filter
- Disable All Filters       Disables all filters
- Remove All Filters        Removes all filters
+ Add New Filter...                Adds a new filter of any type
+ Edit Selected Filter...          Edits the selected filter
+ Remove Selected Filter           Removes the selected filter
+ Disable All Filters              Disables all filters
+ Remove All Filters               Removes all filters
 
 Help
- Documentation             Loads the documentation file
- Installed plug-ins        Displays information about installed plug-ins
- About                     Displays version information
+ Documentation                    Loads the documentation file
+ Installed plug-ins               Displays information about installed plug-ins
+ About                            Displays version information
 
 
 Line Display Keys
@@ -164,30 +188,41 @@ Space   Toggles the selected filter on and off
 Delete  Removes the selected filter
 
 
+Status Bar Indicators
+---------------------
+
+Funnel Icon   Indicates that the "Shown Only Filtered Lines" menu option is
+              currently selected
+Sel           Indicates the number of lines selected in the line display
+Fil           Indicates the number of filtered lines
+Total         Indicates the total number of lines
+Zoom Percent  Indicates the currently used zoom value for the font size
+
+
 -----------------------
 -- Section: Plug-ins --
 -----------------------
 
-TextAnalysisTool.NET's support for plug-ins allows users to add in their own
-code that understands specialized file types.  Every time a file is opened,
-each plug-in is given a chance to take responsibility for parsing that file.
+TextAnalysisTool.NET's support for plug-ins allows users to add in their own 
+code that understands specialized file types.  Every time a file is opened, 
+each plug-in is given a chance to take responsibility for parsing that file.  
 When a plug-in takes responsibility for parsing a file, it becomes that plug-
-in's job to produce a textual representation of the file for display in the
-usual line display.  If no plug-in supports a particular file, then it gets
-opened using TextAnalysisTool.NET's default parser (which displays the file's
-contents directly).  One example of what a plug-in could do is read a binary
-file format and produce meaningful textual output from it (e.g., if the file is
-compressed or encrypted).  Another plug-in might add support for the .zip
-format and display a list of the files within the archive.  A particularly
-ambitious plug-in might translate text files from one language to another.  The
+in's job to produce a textual representation of the file for display in the 
+usual line display.  If no plug-in supports a particular file, then it gets 
+opened using TextAnalysisTool.NET's default parser (which displays the file's 
+contents directly).  One example of what a plug-in could do is read a binary 
+file format and produce meaningful textual output from it (e.g., if the file is 
+compressed or encrypted).  Another plug-in might add support for the .zip 
+format and display a list of the files within the archive.  A particularly 
+ambitious plug-in might translate text files from one language to another.  The 
 possibilities are endless!
 
-Plug-ins are "installed" simply by copying the relevant implementation file
-("TATPlugin_*.dll") to the same folder as the TextAnalysisTool.NET program file
-(TextAnalysisTool.NET.exe).  Every time TextAnalysisTool.NET starts up, it
-searches its startup folder for plug-in files and attempts to load each of
-them.  From then on, installed plug-ins are seamlessly integrated with the rest
-of the application.  To see a list of active plug-ins, use the Help | Installed
+Plug-ins are "installed" simply by copying the relevant implementation file 
+("TATPlugin_*.dll") to the same folder as the TextAnalysisTool.NET program file 
+(TextAnalysisTool.NET.exe).  Every time TextAnalysisTool.NET starts up, it 
+searches its startup folder for plug-in files and attempts to load each of 
+them.  From then on, installed plug-ins are seamlessly integrated with the rest 
+of the application.  To see a list of active plug-ins, use the Help | Installed 
 plug-ins menu item.
 
 
@@ -195,13 +230,13 @@ plug-ins menu item.
 -- Section: Differences from TextAnalysisTool --
 ------------------------------------------------
 
-TextAnalysisTool.NET represents a complete rewrite of TextAnalysisTool to
-produce a fully managed-code application built on top of the .NET Framework.
-Efforts were made during development of the user interface to maintain the
-default/recommended behavior in all cases - except where it was possible to
-make significant usability or performance gains by doing things differently.
-Consequently, though TextAnalysisTool.NET's features are a strict superset of
-TextAnalysisTool's; some of those features may be exposed in a slightly
+TextAnalysisTool.NET represents a complete rewrite of TextAnalysisTool to 
+produce a fully managed-code application built on top of the .NET Framework.  
+Efforts were made during development of the user interface to maintain the 
+default/recommended behavior in all cases - except where it was possible to 
+make significant usability or performance gains by doing things differently.  
+Consequently, though TextAnalysisTool.NET's features are a strict superset of 
+TextAnalysisTool's; some of those features may be exposed in a slightly 
 different manner.  Apologies for the inconvenience to loyal users!
 
 
@@ -209,12 +244,12 @@ different manner.  Apologies for the inconvenience to loyal users!
 -- Section: Regular Expression Syntax --
 ----------------------------------------
 
-TextAnalysisTool.NET uses the standard .NET Framework regular expression class
-Regex, and therefore supports the same regular expression syntax as is exposed
-by the .NET Framework.  For more details, please refer to the ".NET Framework
+TextAnalysisTool.NET uses the standard .NET Framework regular expression class 
+Regex, and therefore supports the same regular expression syntax as is exposed 
+by the .NET Framework.  For more details, please refer to the ".NET Framework 
 Regular Expressions" page in MSDN: <http://msdn.microsoft.com/library/en-
 us/cpguide/html/cpconcomregularexpressions.asp>.  (Note that you can right-
-click the "Regular expression" checkbox from the relevant TextAnalysisTool.NET
+click the "Regular expression" checkbox from the relevant TextAnalysisTool.NET 
 dialog boxes to automatically open this web page in your default browser.)
 
 
@@ -223,7 +258,7 @@ dialog boxes to automatically open this web page in your default browser.)
 --------------------------------------
 
 TextAnalysisTool.NET.exe [InputFile] [/Filters:FilterFile]
-   InputFile - Name of the file to open and display
+   InputFile - Name of the file to open and display 
    FilterFile - Name of a .tat file containing a saved filter configuration
 
 Example:
@@ -234,27 +269,34 @@ TextAnalysisTool.NET.exe \Logs\MyLog.log /Filters:"\Saved Filters\MyConfig.tat"
 -- Section: Registry Settings --
 --------------------------------
 
-You can customize certain aspects of the user interface by adding any of the
+You can customize certain aspects of the user interface by adding any of the 
 following registry values:
 
 HKEY_CURRENT_USER\Software\DavidAns\TextAnalysisTool.NET
-   TabSize               DWORD   Character width of each Tab character ('\t')
-   FontSize              DWORD   Point size of text in the line display
-   WindowTextColor    }  DWORD   0x00rrggbb color specification for the
-   GrayTextColor      }          associated elements of the line display (note:
-   HighlightTextColor }          specifying a custom color overrides the normal
-   WindowColor        }          behavior of using the default system color)
+   TabSize                DWORD   Character width of each Tab character ('\t')
+   FontSize               STRING  Point size of text in the line display
+   ShowMarkersColumn      STRING  When to show the markers column next to the
+                                  lines of text. Valid values: Always, Never,
+                                  WhenInUse
+   BeepOnSearchEnd        DWORD   If set to non-zero, will play a beep when the
+                                  search loops around the document
+   WindowTextColor    }   DWORD   0x00rrggbb color specification for the
+   GrayTextColor      }           associated elements of the line display (note:
+   GrayBackgroundColor}           specifying a custom color overrides the normal
+   HighlightTextColor }           behavior of using the default system color)
+   WindowColor        }
    HighlightColor     }
-
+   MaxNumberOfRecentItems DWORD   Maximum number of recent files or recent
+                                  filter files displayed in the corresponding
+                                  File menus. The default value is 5.
 
 --------------------------
 -- Section: Bug Reports --
 --------------------------
 
-Please send email to DavidAns@Microsoft.com (David Anson), with a detailed
-description of any problems you encounter.  Whenever possible, please include a
-file demonstrating the problem.
+Please create an issue at https://github.com/TextAnalysisTool/Releases/issues
+with a detailed description of any problem you encounter.  Whenever possible,
+please include a file demonstrating the problem.
 
 
 Thanks and enjoy!!!
-
