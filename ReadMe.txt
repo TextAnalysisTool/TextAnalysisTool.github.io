@@ -72,38 +72,76 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
-2015-01-07 by Uriel Cohen (http://github.com/cohen-uriel)
+2015-05-18 by Uriel Cohen
+----------
+* Gave a more modern look to all menus
+* Improved behavior of the "More..." button in Options dialog
+
+2015-05-07 by Mike Morante
+----------
+* Fixed a bug where the context menu for filters would remain enabled even if
+  no filter was selected
+
+2015-04-14 by Mike Morante
+----------
+* Fixed a bug that would cause loading filters from the command line to fail
+
+2015-03-27 by Mike Morante
+----------
+* Added columns to the filters list, use only the matching pattern for
+  previewing the filter
+* Added drag&drop support for the filters list
+* Double-click or press Enter on a filter to edit it
+* Double-click a line to create a new filter from it
+* Added menu item to enable all filters at once
+* Renamed "Filter" menu to "Filters"
+
+2015-02-26 by Uriel Cohen
+----------
+* Added support for loading a configuration file from the command line
+* Added support for multiple filter files on the command line
+
+2015-02-24 by Uriel Cohen
+----------
+* Fixed a bug with handling of some defaults through registry settings
+
+2015-01-28 by Uriel Cohen
+----------
+* Added support for setting configuration parameters from a preferences dialog
+* Added the capability to Export and Import configuration files
+
+2015-01-07 by Uriel Cohen
 ----------
 * Added a tooltip to the loaded file indicator in the status bar
 * Fixed a bug where setting a marker used in an active filter causes the
   current selection of lines to be changed
 
-2015-01-07 by David Anson (http://dlaa.me/)
+2015-01-07 by David Anson
 ----------
 * Improve HTML representation of clipboard text when copying for more
   consistent paste behavior
-
-2015-01-01 by Uriel Cohen (http://github.com/cohen-uriel)
+ 
+2015-01-01 by Uriel Cohen
 ----------
 * Fixed a bug where TAB characters are omitted in the display
 * Fixed a bug where lines saved to file include an extra white space at the
   start
 
-2014-12-21 by Uriel Cohen (http://github.com/cohen-uriel)
+2014-12-21 by Uriel Cohen
 ----------
 * Changed compilation to target .NET Framework 4.0
 
-2014-12-11 by Uriel Cohen (http://github.com/cohen-uriel)
+2014-12-11 by Uriel Cohen
 ----------
 * Redesigned the status bar indications to be consistent with Visual Studio and
   added the number of currently selected lines
 
-2014-12-04 by Uriel Cohen (http://github.com/cohen-uriel)
+2014-12-04 by Uriel Cohen
 ----------
 * Added the ability to append an existing filters file to the current filters
   list
 
-2014-12-01 by Uriel Cohen (http://github.com/cohen-uriel)
+2014-12-01 by Uriel Cohen
 ----------
 * Added recent file/filter menus for easy access to commonly-used files
 * Added a new settings registry key to set the
@@ -114,23 +152,23 @@ all circumstances, but is ultimately bound by the resources available to it.
 * Fixed a bug where copy-pasting lines from the application to Lync
   resulted in one long line without carriage returns
 
-2014-11-11 by Uriel Cohen (http://github.com/cohen-uriel)
+2014-11-11 by Uriel Cohen
 ----------
-* Added support for selection of background color in the filters
+* Added support for selection of background color in the filters 
   (different selection of colors than the foreground colors)
 * The background color can be saved and loaded with the filters
-* Filters from previous versions that lack a background color will have the
+* Filters from previous versions that lack a background color will have the 
   default background color
-* Saving foreground color field in filters to 'foreColor' attribute.
-  Old 'color' attribute is still being loaded for backward compatibility
+* Saving foreground color field in filters to 'foreColor' attribute. 
+  Old 'color' attribute is still being loaded for backward compatibility 
   purposes.
 * Changed control alignment in Find dialog and Filter dialog
 
-2014-10-21 by Mike Morante (http://github.com/mike-mo)
+2014-10-21 by Mike Morante
 ----------
 * Fix localization issue with the build string generation
 
-2014-04-22 by Mike Morante (http://github.com/mike-mo)
+2014-04-22 by Mike Morante
 ----------
 * Line metadata is now visually separate from line text contents
 * Markers can be shown always/never/when in use to have more room for line text
@@ -138,7 +176,7 @@ all circumstances, but is ultimately bound by the resources available to it.
 * Added statusbar panel funnel icon to reflect the current status of the Show
   Only Filtered Lines setting
 
-2014-02-27 by Mike Morante (http://github.com/mike-mo)
+2014-02-27 by Mike Morante
 ----------
 * Added zoom controls to quickly increase/decrease the font size
 * Zoom level persists across sessions
@@ -256,3 +294,17 @@ Highlights:
 2003-02-21, 2003-02-11, 2003-02-06
 ----------------------------------
 Preview releases to a handful of volunteers
+
+
+------------
+-- People --
+------------
+
+Project owner
+-------------
+* David Anson - http://dlaa.me/
+
+Contributors
+------------
+* Mike Morante - http://github.com/mike-mo
+* Uriel Cohen - http://github.com/cohen-uriel
