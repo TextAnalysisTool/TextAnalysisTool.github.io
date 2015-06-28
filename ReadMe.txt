@@ -72,6 +72,10 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
+2015-06-23 by Uriel Cohen
+----------
+* Fixed some bugs caused by the introduction of the new menus look & feel
+
 2015-05-18 by Uriel Cohen
 ----------
 * Gave a more modern look to all menus
