@@ -72,6 +72,25 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
+2016-01-08 by Vince Curley
+----------
+* Added a setting to control whether or not line numbers are displayed
+* Added a setting to control whether or not line numbers are included when
+  copying text to the clipboard
+* Added a setting to control whether or not a warning is displayed when
+  replacing text being analyzed with content from the clipboard or
+  drag-and-drop.
+* Fixed a bug that prevented consistent zooming with the mouse scroll wheel
+* Fixed a bug where the hit count didn't update when a new file was opened
+
+2015-10-14 by David Anson
+----------
+* Fixed a bug with window position not being saved/restored consistently
+
+2015-08-17 by Aleksey Kabanov
+----------
+* Added filter descriptions
+
 2015-06-23 by Uriel Cohen
 ----------
 * Fixed some bugs caused by the introduction of the new menus look & feel
@@ -312,3 +331,5 @@ Contributors
 ------------
 * Mike Morante - http://github.com/mike-mo
 * Uriel Cohen - http://github.com/cohen-uriel
+* Aleksey Kabanov
+* Vince Curley
