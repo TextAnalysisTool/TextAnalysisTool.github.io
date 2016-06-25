@@ -249,12 +249,12 @@ different manner.  Apologies for the inconvenience to loyal users!
 ----------------------------------------
 
 TextAnalysisTool.NET uses the standard .NET Framework regular expression class 
-Regex, and therefore supports the same regular expression syntax as is exposed 
-by the .NET Framework.  For more details, please refer to the ".NET Framework 
-Regular Expressions" page in MSDN: <http://msdn.microsoft.com/library/en-
-us/cpguide/html/cpconcomregularexpressions.asp>.  (Note that you can right-
-click the "Regular expression" checkbox from the relevant TextAnalysisTool.NET 
-dialog boxes to automatically open this web page in your default browser.)
+Regex, and therefore supports the same regular expression syntax used by the
+.NET Framework.  For more details, please refer to the ".NET Framework Regular
+Expressions" page: <https://msdn.microsoft.com/en-us/library/hs600312.aspx>.
+(Note that you can right-click the "Regular expression" checkbox from the
+relevant TextAnalysisTool.NET dialog boxes to automatically open this web page
+in your default browser.)
 
 
 --------------------------------------

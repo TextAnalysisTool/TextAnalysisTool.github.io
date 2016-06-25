@@ -41,6 +41,12 @@ ReadMe.txt - Requirements, Installation Instructions, File List, Known Issues,
 * GDI+ occasionally throws a System.Runtime.InteropServices.ExternalException
   with the message "A generic error occurred in GDI+.". This exceptional
   condition causes TextAnalysisTool.NET to exit after notifying the user.
+  One cause of this was rendering very long lines. To avoid this the app now
+  takes a safe substring of the original line based on the width of the rendered
+  characters. The message "[TextAnalysisTool.NET could not display the whole line.
+  Filtering, copying, and searching are unaffected.]" is included at the end of the
+  line to indicate truncation. Filtering, searching, and copying are all still
+  performed on the complete text of the line.
 * The .NET Framework's improper handling of vertical and horizontal scrollbar
   messages for ListBoxes can cause rendering problems for files with very many
   or very long lines.
@@ -71,6 +77,25 @@ all circumstances, but is ultimately bound by the resources available to it.
 -------------
 -- History --
 -------------
+
+2016-06-16 by David Anson
+----------
+* Updated the link to the .NET Framework Regular Expressions documentation
+
+2016-04-22 by Vince Curley
+----------
+* Added ability to dock the filter list to any side of the main window
+* Added a tool tip to show what filters each line matches
+* Prompt to save the filter list before overwriting it when filters are
+  loaded from a file and before exiting the app. Prompting only happens if
+  there is a backing filter file (that is, if filters were loaded from a
+  file or saved to a file) so we don't prompt to save ad-hoc, temporary filters.
+* Include the filter file name (if any) and a "filters changed" indicator
+  in the main window title bar.
+* Fixed a bug that would cause a crash when displaying lines with several
+  thousand characters. Such lines will now be truncated when displayed,
+  with a message indicating so. Filtering, searching, and copying
+  will still work on the complete text of the line.
 
 2016-01-08 by Vince Curley
 ----------
