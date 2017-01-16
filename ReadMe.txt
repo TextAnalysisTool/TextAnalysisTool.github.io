@@ -55,6 +55,10 @@ ReadMe.txt - Requirements, Installation Instructions, File List, Known Issues,
   for an even worse .NET Framework repainting bug.
 * ListBox limitations on 16-bit OSes (Windows 95/98/Me) prevent files with
   more than 32,767 lines from displaying properly.
+* The font size selected in the preferences dialog will sometimes be overridden
+  by a slightly larger or smaller size. This is the expected behavior as .Net
+  and GDI work together to pick a size that will render properly. See also
+  http://stackoverflow.com/questions/3544926/font-size-discrepancy-in-net-gdi
 
 
 -----------
@@ -77,6 +81,20 @@ all circumstances, but is ultimately bound by the resources available to it.
 -------------
 -- History --
 -------------
+
+2016-12-09 by Vince Curley
+----------
+* Added the "Mark Filters Changed" setting to control when the filter list is
+  considered changed. This gives the flexibility to enable, disable, or move
+  filters without "dirtying" the list and causing a prompt to save on exit.
+
+2016-10-29 by Vince Curley
+----------
+* Added font name and size to the preferences dialog. The displayed font size
+  is controlled by the base font size and the zoom level.
+* Added /Line command line argument to jump to that line when a file is opened
+* Fix a bug where the '&' character in lines was displayed incorrectly
+* Updated menu and command line options in documentation
 
 2016-06-16 by David Anson
 ----------

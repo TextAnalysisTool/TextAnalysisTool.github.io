@@ -117,8 +117,10 @@ File
  Save Current Lines...            Saves the current lines to a new file
  Load Filters...                  Loads a filter file (*.tat) and replaces the
                                   current filters
- Save Filters...                  Saves the current filters to a filter file
+ Save Filters                     Saves the current filters to a filter file
                                   (*.tat)
+ Save Filters As...               Saves the current filters to a new filter
+                                  file (*.tat)
  Append to Existing Filters...    Loads a filter file (*.tat) and appends the
                                   filters to the current filters
  Recent Files                     A list of the most recently loaded files
@@ -149,6 +151,7 @@ View
                                   the current line is preserved whenever
                                   possible; otherwise it is kept as near to its
                                   previous location as possible)
+ Show Line Numbers                Toggles showing/hiding of line numbers
  Show Markers
   Always                          Always show the markers left of the text
   Never                           Never show the markers left of the text
@@ -156,6 +159,7 @@ View
  Zoom In                          Increases the font size
  Zoom Out                         Decreases the font size
  Reset Zoom                       Resets the font size to the default size
+ Filter List Location             Set the docking location for the filter list
 
 Filters
  Add New Filter...                Adds a new filter of any type
@@ -187,15 +191,17 @@ Ctrl+Shift+A-Z Toggles the associated filter
 Filter Display Keys
 -------------------
 
-Space   Toggles the selected filter on and off
-Enter   Edits the selected filter (also accessible through double-click)
-Delete  Removes the selected filter
+Space                            Toggles the selected filter on and off
+Enter                            Edits the selected filter (also accessible
+                                 through double-click)
+Delete                           Removes the selected filter
+Ctrl+(Left, Right, Up, or Down)  Set the docking location of the filter list
 
 
 Status Bar Indicators
 ---------------------
 
-Funnel Icon   Indicates that the "Shown Only Filtered Lines" menu option is
+Funnel Icon   Indicates that the "Show Only Filtered Lines" menu option is
               currently selected
 Sel           Indicates the number of lines selected in the line display
 Fil           Indicates the number of filtered lines
@@ -262,9 +268,11 @@ in your default browser.)
 --------------------------------------
 
 TextAnalysisTool.NET.exe [InputFile] [/Filters:FilterFile] [/Config:ConfigFile]
+                         [/Line:LineNumber]
    InputFile - Name of the file to open and display 
    FilterFile - Name of a .tat file containing a saved filter configuration
    ConfigFile - Name of an .xml file containing configuration options
+   LineNumber - The line to display when the file is opened
 
 Examples:
 TextAnalysisTool.NET.exe \Logs\MyLog.log /Filters:"\Saved Filters\MyFilters.tat"
