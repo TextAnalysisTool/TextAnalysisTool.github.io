@@ -82,6 +82,11 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
+2017-01-24 by Vince Curley
+----------
+* Fixed a bug that would prevent settings from being saved when FontFamily or
+  ZoomPercent had default values but no key in the registry.
+
 2016-12-09 by Vince Curley
 ----------
 * Added the "Mark Filters Changed" setting to control when the filter list is
