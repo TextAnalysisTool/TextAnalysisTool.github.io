@@ -14,7 +14,7 @@ versions are supported through a .config that needs to be configured for
 the corresponding version. For more information, please refer to the
 following MSDN article: "How to: Configure an App to Support .NET Framework 4
 or 4.5"
-http://msdn.microsoft.com/en-us/library/jj152935.aspx
+https://msdn.microsoft.com/en-us/library/jj152935.aspx
 
 
 -------------------------------
@@ -58,7 +58,7 @@ ReadMe.txt - Requirements, Installation Instructions, File List, Known Issues,
 * The font size selected in the preferences dialog will sometimes be overridden
   by a slightly larger or smaller size. This is the expected behavior as .Net
   and GDI work together to pick a size that will render properly. See also
-  http://stackoverflow.com/questions/3544926/font-size-discrepancy-in-net-gdi
+  https://stackoverflow.com/questions/3544926/font-size-discrepancy-in-net-gdi
 
 
 -----------
@@ -81,6 +81,21 @@ all circumstances, but is ultimately bound by the resources available to it.
 -------------
 -- History --
 -------------
+
+2018-01-03 by David Anson
+----------
+* Fixed an intermittent bug preventing the window from showing on the taskbar.
+
+2017-12-18 by David Anson
+----------
+* Added a separate build without plugin support for environments that forbid
+  DLL loading.
+
+2017-12-14 by Vince Curley
+----------
+* Fixed a bug that could cause a crash when changing files with active filters.
+* Added the "Show Filter Tool Tip" setting to control whether or not to display
+  a tool tip with the matching filters for each line.
 
 2017-01-24 by Vince Curley
 ----------
@@ -373,11 +388,11 @@ Preview releases to a handful of volunteers
 
 Project owner
 -------------
-* David Anson - http://dlaa.me/
+* David Anson - https://dlaa.me/
 
 Contributors
 ------------
-* Mike Morante - http://github.com/mike-mo
-* Uriel Cohen - http://github.com/cohen-uriel
+* Mike Morante - https://github.com/mike-mo
+* Uriel Cohen - https://github.com/cohen-uriel
 * Aleksey Kabanov
 * Vince Curley
