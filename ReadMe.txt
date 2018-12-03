@@ -82,6 +82,13 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
+2018-11-20 by Vince Curley and Jenny Leung
+----------
+* Add new function in ITextAnalysisToolPlugin to support configurable plug-ins
+  via popup dialog.
+* Add new item to Edit menu to list configurable plug-ins.
+* Support custom foreground and background colors for filters.
+
 2018-01-03 by David Anson
 ----------
 * Fixed an intermittent bug preventing the window from showing on the taskbar.
