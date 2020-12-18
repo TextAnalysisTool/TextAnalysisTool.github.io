@@ -152,6 +152,8 @@ View
                                   possible; otherwise it is kept as near to its
                                   previous location as possible)
  Show Line Numbers                Toggles showing/hiding of line numbers
+ Show Filter Tool Tip             Toggles showing/hiding a tool tip with the
+                                  matching filters for each line
  Show Markers
   Always                          Always show the markers left of the text
   Never                           Never show the markers left of the text

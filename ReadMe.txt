@@ -47,9 +47,6 @@ ReadMe.txt - Requirements, Installation Instructions, File List, Known Issues,
   Filtering, copying, and searching are unaffected.]" is included at the end of the
   line to indicate truncation. Filtering, searching, and copying are all still
   performed on the complete text of the line.
-* The .NET Framework's improper handling of vertical and horizontal scrollbar
-  messages for ListBoxes can cause rendering problems for files with very many
-  or very long lines.
 * Checkboxes don't always repaint properly due to a .NET Framework bug.
 * There is extra flicker when resizing the window. This is due to a workaround
   for an even worse .NET Framework repainting bug.
@@ -81,6 +78,12 @@ all circumstances, but is ultimately bound by the resources available to it.
 -------------
 -- History --
 -------------
+
+2020-12-17 by Vince Curley
+----------
+* Fixed a bug that would truncate lines prematurely.
+* Fixed a bug that would cause a crash when reloading a changed file.
+* Fixed the scrollbar so dragging the thumb will correctly update the view of the file.
 
 2018-11-20 by Vince Curley and Jenny Leung
 ----------
