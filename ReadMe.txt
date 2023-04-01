@@ -7,14 +7,7 @@
 -- Requirements --
 ------------------
 
-Microsoft .NET Framework 4.0 (or later versions)
-
-Note: TextAnalysisTool.NET is compiled for .NET 4.0. Later .NET Framework
-versions are supported through a .config that needs to be configured for
-the corresponding version. For more information, please refer to the
-following MSDN article: "How to: Configure an App to Support .NET Framework 4
-or 4.5"
-https://msdn.microsoft.com/en-us/library/jj152935.aspx
+Microsoft .NET Framework 4.8 (or later versions)
 
 
 -------------------------------
@@ -79,11 +72,44 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
+2023-03-24 by Vince Curley and Anton Polinger
+----------
+* Added support for character encodings beyond the system default and UTF-8.
+* Added ability to jump to previous or next line that matches the currently
+  selected filter. Right click on a filter, choose Previous or Next from the
+  filter menu, or use Shift+F8 (previous)/F8 (next).
+* Added a right click context menu to toggle markers (also works with the
+  context menu key and Shift+F10).
+* Improve readability when the filter text color is similar to the selected
+  line background color. When a line is selected use the Highlight and
+  Highlight Text colors specified in the Preferences dialog rather than colors
+  defined by filters.
+* Added /clipboard command line argument to load initial text from the
+  clipboard.
+* Fixed a bug that prevented custom tab size from being saved across sessions.
+* Minor optimization: Setting Tab Size in Preferences to 1 will reduce file
+  load time ~10%.
+* Fix horizontal scrollbar issue on Windows 11.
+* Added the "Remember Filter Column Widths" setting to control whether or not
+  the order and widths of the columns in the filters view are preserved across
+  sessions. The default is the legacy behavior; this can be changed in the
+  Preferences dialog.
+* An Exclude filter will now remember the colors set when it was an Include
+  filter.
+* Added the ability to copy and paste of filters between TextAnalysisTool.NET
+  windows.
+* Added settings to control how the file name is displayed in the title bar.
+* Use window background and text colors specified in Preferences for the line
+  and filter panes. Not full dark-mode, but most of the window can be
+  controlled.
+* Target .NET Framework 4.8 (because version 4.0 is no longer supported).
+
 2020-12-17 by Vince Curley
 ----------
 * Fixed a bug that would truncate lines prematurely.
 * Fixed a bug that would cause a crash when reloading a changed file.
-* Fixed the scrollbar so dragging the thumb will correctly update the view of the file.
+* Fixed the scrollbar so dragging the thumb will correctly update the view of
+  the file.
 
 2018-11-20 by Vince Curley and Jenny Leung
 ----------
@@ -137,7 +163,8 @@ all circumstances, but is ultimately bound by the resources available to it.
 * Prompt to save the filter list before overwriting it when filters are
   loaded from a file and before exiting the app. Prompting only happens if
   there is a backing filter file (that is, if filters were loaded from a
-  file or saved to a file) so we don't prompt to save ad-hoc, temporary filters.
+  file or saved to a file) so we don't prompt to save ad-hoc, temporary
+  filters.
 * Include the filter file name (if any) and a "filters changed" indicator
   in the main window title bar.
 * Fixed a bug that would cause a crash when displaying lines with several
@@ -406,3 +433,4 @@ Contributors
 * Uriel Cohen - https://github.com/cohen-uriel
 * Aleksey Kabanov
 * Vince Curley
+* Jenny Leung

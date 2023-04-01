@@ -135,6 +135,10 @@ Edit
  Copy                             Copies the currently selected line(s) to the
                                   clipboard
  Paste                            Displays all text currently on the clipboard
+ Copy Filters                     Copies the selected filter or filters to the
+                                  clipboard
+ Paste Filters                    Adds any filters in the clipboard to the end
+                                  of the filter list
  Select All                       Selects all lines
  Find...                          Finds the next match of a string or regular
                                   expression
@@ -162,8 +166,15 @@ View
  Zoom Out                         Decreases the font size
  Reset Zoom                       Resets the font size to the default size
  Filter List Location             Set the docking location for the filter list
+ Encoding
+  System Default                  Use the OS's default character encoding
+  Windows-1252, UTF-8, GB18030    Commonly used encodings
+  More encodings...               Dialog to select an encoding supported by the
+                                  current system
 
 Filters
+ Previous Match                   Find a match for the current filter, searching up
+ Next Match                       Find a match for the current filter, searching down
  Add New Filter...                Adds a new filter of any type
  Edit Selected Filter...          Edits the selected filter
  Remove Selected Filter           Removes the selected filter
@@ -270,11 +281,12 @@ in your default browser.)
 --------------------------------------
 
 TextAnalysisTool.NET.exe [InputFile] [/Filters:FilterFile] [/Config:ConfigFile]
-                         [/Line:LineNumber]
+                         [/Line:LineNumber] [/Clipboard]
    InputFile - Name of the file to open and display 
    FilterFile - Name of a .tat file containing a saved filter configuration
    ConfigFile - Name of an .xml file containing configuration options
    LineNumber - The line to display when the file is opened
+   Clipboard - Load text from the clipboard
 
 Examples:
 TextAnalysisTool.NET.exe \Logs\MyLog.log /Filters:"\Saved Filters\MyFilters.tat"
@@ -286,6 +298,8 @@ TextAnalysisTool.NET will append the filters from all supplied filter files.
 
 Configuration options loaded from the command line become active when
 TextAnalysisTool.NET starts and are saved to the registry when it is closed.
+
+If both InputFile and Clipboard are specified, the first one is used.
 
 
 ---------------------------------
@@ -300,6 +314,30 @@ from the same "Preferences..." dialog. This will generate the configuration XML
 file with all the available options. Once generated, you can remove some of the
 configuration options from the file if you don't want to override the current
 application value for that option.
+
+
+------------------------
+-- Section: Encodings --
+------------------------
+
+All text files are written with a certain character encoding [1]. This encoding
+determines how characters are translated to bytes when written to the file and
+how a reader should interpret those bytes. If a file is read with the wrong
+encoding the characters can look garbled or random. Using the correct encoding
+is critical for properly analysis. TextAnalysisTool.NET determines which encoding
+to use in the following order, from highest priority to lowest:
+
+  1) Byte order marks in a UTF file [2]
+  2) The current view's encoding chosen in the View / Encodings... menu
+  3) The "Default Encoding" setting in the Edit / Preferences... menu
+  4) The default character encoding of the current system
+
+Note that 2 will immediately impact the current view and not future files.
+3 will only impact files opened after it is changed, not the current view.
+All text copied to the clipboard is UTF-8.
+
+[1] https://en.wikipedia.org/wiki/Character_encoding
+[2] https://en.wikipedia.org/wiki/Byte_order_mark
 
 
 --------------------------
