@@ -72,6 +72,12 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
+2023-04-25 by Anton Polinger and Vince Curley
+----------
+* Fixed taskbar flicker and mouse click fall through during long filter
+  searches.
+* Fixed several edge case asserts/crashes.
+
 2023-03-24 by Vince Curley and Anton Polinger
 ----------
 * Added support for character encodings beyond the system default and UTF-8.
@@ -243,7 +249,7 @@ all circumstances, but is ultimately bound by the resources available to it.
 ----------
 * Improve HTML representation of clipboard text when copying for more
   consistent paste behavior
- 
+
 2015-01-01 by Uriel Cohen
 ----------
 * Fixed a bug where TAB characters are omitted in the display
@@ -277,13 +283,13 @@ all circumstances, but is ultimately bound by the resources available to it.
 
 2014-11-11 by Uriel Cohen
 ----------
-* Added support for selection of background color in the filters 
+* Added support for selection of background color in the filters
   (different selection of colors than the foreground colors)
 * The background color can be saved and loaded with the filters
-* Filters from previous versions that lack a background color will have the 
+* Filters from previous versions that lack a background color will have the
   default background color
-* Saving foreground color field in filters to 'foreColor' attribute. 
-  Old 'color' attribute is still being loaded for backward compatibility 
+* Saving foreground color field in filters to 'foreColor' attribute.
+  Old 'color' attribute is still being loaded for backward compatibility
   purposes.
 * Changed control alignment in Find dialog and Filter dialog
 
