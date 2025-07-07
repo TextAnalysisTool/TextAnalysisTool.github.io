@@ -72,6 +72,22 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
+2025-06-17 by Anton Polinger and Vince Curley
+----------
+* Added custom filter highlighting for selected filters, which allows the user to see
+  the background and foreground colors of the selected filter.
+* Added high DPI support and scaling on multiple monitors with different DPI
+  and scale settings.
+* Added filter list font zoom that follows the zoom of the main text area.
+* Added a multi-filter editing behavior that allows the user to edit properties
+  of multiple selected filters simultaneously.
+* Worked around an existing WinForms mouse drag-select quirk and fixed checkbox 
+  selection behavior when multiple filters are selected.
+* Added a paste confirmation dialog that verifies that the user wishes to 
+  overwrite text in the tool with text from the clipboard.
+* Fixed a bug that caused a crash when scrolling through a file with a large 
+  number of lines.
+
 2023-04-25 by Anton Polinger and Vince Curley
 ----------
 * Fixed taskbar flicker and mouse click fall through during long filter
