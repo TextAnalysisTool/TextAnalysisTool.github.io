@@ -72,6 +72,11 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
+2025-08-29 by Vince Curley
+----------
+* Support horizontal scrolling using Shift + Mouse Scroll Wheel.
+* Fix bug that prevented custom color selection.
+
 2025-06-17 by Anton Polinger and Vince Curley
 ----------
 * Added custom filter highlighting for selected filters, which allows the user to see
@@ -456,3 +461,4 @@ Contributors
 * Aleksey Kabanov
 * Vince Curley
 * Jenny Leung
+* Anton Polinger
