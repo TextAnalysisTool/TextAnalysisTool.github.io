@@ -72,6 +72,13 @@ all circumstances, but is ultimately bound by the resources available to it.
 -- History --
 -------------
 
+2025-11-21 by Vince Curley and Anton Polinger
+----------
+* Fixed a bug that preemptively displayed the color dialog when editing a filter.
+* Fixed a bug that prevented focus from returning to the application when closing
+  the filter or find dialogs.
+* Fixed keyboard shortcuts in the new and edit filter dialogs.
+
 2025-08-29 by Vince Curley
 ----------
 * Support horizontal scrolling using Shift + Mouse Scroll Wheel.
